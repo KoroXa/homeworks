@@ -1,3 +1,4 @@
+# игра змейка
 import pygame, time, random
 
 pygame.init()
