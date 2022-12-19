@@ -1,4 +1,4 @@
-import os
+#import os
 s = open('words.txt', 'r', encoding = 'utf-8')
 f = s.read().splitlines()
 print(f)
@@ -16,13 +16,15 @@ opeen = True
 while 2!=1:
 	if opeen == True:
 		q = int(input("1 - перевести слово" + '\n 2 - добавить слово' + '\n 3 - не показывать это меню(старый выбор)'))
-	os.system('cls')
+	#os.system('cls')
+	print()
 	if q == 3:
 		opeen = False
 		
 	if q == 1 or opeen == False:
 		if a in dict:		
 			print(a, '-', dict[a])
+			print()
 			suc = True
 		else:
 			suc == False
