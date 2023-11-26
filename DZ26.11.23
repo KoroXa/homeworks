@@ -1,0 +1,46 @@
+first programm !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
+
+int sum = 0;
+bool sos = true;
+for (int i = number; i > 0; i /= 10)
+{
+    sum += i % 10;
+}
+
+for (int i = 2; i <= Math.Sqrt(number); i++)
+{
+    if (number % i == 0)
+    {
+        sos = false;
+        break;
+    }
+}
+
+Console.WriteLine($"Сумма цифр числа: {sum}");
+
+if (sos)
+{
+    Console.WriteLine("Число простое");
+}
+else
+{
+    Console.WriteLine("Число составное");
+}
+
+second programm !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Console.Write("Введите число: ");
+        int number = int.Parse(Console.ReadLine());
+
+        int count = 0;
+        while (number > 0) {
+            if (number % 10 == 8) {
+                count++;
+            }
+            number /= 10;
+        }
+
+        Console.WriteLine($"Количество цифр 8 в числе: {count}");
